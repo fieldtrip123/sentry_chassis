@@ -11,14 +11,17 @@
 
 
 
-RC_Ctrl RC_CtrlData;//数据帧
-Run_Data run;
-extern uint8_t UART_RECV[512];
-/**
-  * @brief	resolution rc protocol data
-  * @param
-  * @retval
-  */
+extern Run_Data  run_data;
+RC_Ctrl RC_CtrlData;
+
+ uint8_t UART_RECV[512];
+
+
+
+void remoteTask()
+{
+    RC_Robot_Ctrl();
+}
 
 void RemoteDataProcess(volatile uint8_t *pData,RC_Ctrl *rc_ctrl)
 {
@@ -48,12 +51,11 @@ void RemoteDataProcess(volatile uint8_t *pData,RC_Ctrl *rc_ctrl)
 
 void RC_Init(void)//初始化
 {
-    HAL_UARTEx_ReceiveToIdle_DMA(&huart1,UART_RECV,18);
+    HAL_UARTEx_ReceiveToIdle_DMA(&huart1,UART_RECV,117);
     __HAL_DMA_DISABLE_IT(huart1.hdmarx, DMA_IT_HT);
-
 }
 
-void RC_Robot_Ctrl(Run_Data *run)//遥控控制函数 给运动参数结构体赋值
+void RC_Robot_Ctrl()//遥控控制函数 给运动参数结构体赋值
 {
     if(RC_CtrlData.rc.s2==RC_SW_DOWN)//急停
     {
@@ -61,8 +63,9 @@ void RC_Robot_Ctrl(Run_Data *run)//遥控控制函数 给运动参数结构体�
     }
     if(RC_CtrlData.rc.s2==RC_SW_MID&&RC_CtrlData.rc.s1==RC_SW_DOWN)//遥控
     {
-
-
+        run_data.Vx =   (RC_CtrlData.rc.ch3-RC_CH_VALUE_OFFSET);
+        run_data.Vy =   -(RC_CtrlData.rc.ch2-RC_CH_VALUE_OFFSET);
+        run_data.Vw =   -(RC_CtrlData.rc.ch0-RC_CH_VALUE_OFFSET);
 
     }
 
@@ -71,7 +74,6 @@ void RC_Robot_Ctrl(Run_Data *run)//遥控控制函数 给运动参数结构体�
 
     }
 }
-
 
 
 

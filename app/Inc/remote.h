@@ -9,7 +9,7 @@
 #define __DR16_H__
 
 #include "main.h"
-#include "chassis.h"
+
 
 #define RC_CH_VALUE_MIN ((uint16_t)364)
 #define RC_CH_VALUE_OFFSET ((uint16_t)1024)
@@ -66,20 +66,20 @@ typedef struct
     }key;
 }RC_Ctrl;
 
-typedef struct Run_Data
+typedef struct
 {
-        int16_t Vx;//前后速度
-        int16_t Vy;//左右速度
-        int16_t Vw;//自转速度 逆时针为正
-}
-Run_Data;
+    int16_t Vx;//前后速度
+    int16_t Vy;//左右速度
+    int16_t Vw;//自转速度 逆时针为正
+}Run_Data;
 
 
-extern RC_Ctrl RC_CtrlData;
+extern  RC_Ctrl RC_CtrlData;
 
 void RC_Init(void);
 void RemoteDataProcess(volatile uint8_t *pData,RC_Ctrl *rc_ctrl);
-void RC_Robot_Ctrl(Run_Data *run);
+void RC_Robot_Ctrl();
+void remoteTask();
 
 #endif
 

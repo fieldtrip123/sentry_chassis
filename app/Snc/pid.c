@@ -8,8 +8,8 @@
 #include "pid.h"
 
 pid_struct_t chassis_3508_pid[4];
-pid_struct_t chassis_speed_pid[4];
-pid_struct_t chassis_angle_pid[4];
+pid_struct_t bigyaw_speed_pid;
+pid_struct_t bigyaw_angle_pid;
 
 
 
@@ -54,7 +54,12 @@ float pid_calc(pid_struct_t *pid, float ref, float fdb)
 
 void all_pid_init()
 {
-
+   for(int i=0;i,4;i++)
+   {
+        pid_init(&chassis_3508_pid[i],20,0,0,30000,30000);
+   }
+        pid_init(&bigyaw_speed_pid,80,0,0,16000,16000);
+        pid_init(&bigyaw_angle_pid,80,0,0,16000,16000);
 }
 
 

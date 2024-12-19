@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "chassis.h"
+#include "bsp_uart.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -139,7 +140,8 @@ void chassis_Task(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+      chassisTask();
+      osDelay(1);
   }
   /* USER CODE END chassis_Task */
 }
@@ -157,7 +159,8 @@ void Uart_task(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+      UartTask();
+      osDelay(1);
   }
   /* USER CODE END Uart_task */
 }
@@ -175,7 +178,8 @@ void Remote_Task(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+      remoteTask();
+      osDelay(1);
   }
   /* USER CODE END Remote_Task */
 }

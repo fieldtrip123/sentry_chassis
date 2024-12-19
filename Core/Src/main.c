@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "remote.h"
+#include "bsp_can.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,7 +59,7 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+extern uint8_t UART_RECV[512];
 /* USER CODE END 0 */
 
 /**
@@ -94,7 +95,9 @@ int main(void)
   MX_CAN2_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  can1_init();
+  can2_init();
+  RC_Init();
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -165,7 +168,16 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
+{
+    RemoteDataProcess(UART_RECV,&RC_CtrlData);
+    if( huart==&huart1)
+    {
+        HAL_UARTEx_ReceiveToIdle_DMA(&huart1, UART_RECV, 117);
+        __HAL_DMA_DISABLE_IT(huart1.hdmarx, DMA_IT_HT);
+    }
 
+}
 /* USER CODE END 4 */
 
 /**

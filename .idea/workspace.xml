@@ -21,31 +21,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59b1b016-ff64-4711-ba38-33bb300b9ed5" name="更改" comment="origin">
-      <change afterPath="$PROJECT_DIR$/app/Inc/pid.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Inc/remote.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Snc/pid.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Snc/remote.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Inc/yaw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Snc/yaw.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_hal_msp.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_hal_msp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d639b32f55966fea22dc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-13T15-05-48-0969.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-sentry_chassis.elf-Debug-4685445fccfe1d69d468.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inc/chassis.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/Inc/chassis.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inc/remote.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/Inc/remote.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Snc/chassis.c" beforeDir="false" afterPath="$PROJECT_DIR$/app/Snc/chassis.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Snc/pid.c" beforeDir="false" afterPath="$PROJECT_DIR$/app/Snc/pid.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Snc/remote.c" beforeDir="false" afterPath="$PROJECT_DIR$/app/Snc/remote.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsp/Inc/bsp_can.h" beforeDir="false" afterPath="$PROJECT_DIR$/bsp/Inc/bsp_can.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsp/Inc/uart.h" beforeDir="false" afterPath="$PROJECT_DIR$/bsp/Inc/bsp_uart.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsp/Snc/bsp_can.c" beforeDir="false" afterPath="$PROJECT_DIR$/bsp/Snc/bsp_can.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsp/Snc/uart.c" beforeDir="false" afterPath="$PROJECT_DIR$/bsp/Snc/bsp_uart.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-42fb992ddba43a337319.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-6fb1498bd3444b52f71e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-503d27d6b0d0bec944ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-13T15-38-49-0212.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-sentry_chassis.elf-Debug-738e9dda6645e3e4947a.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/Core/Src/freertos.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/Core/Src/freertos.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/Core/Src/stm32f4xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/Core/Src/stm32f4xx_it.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/app/Snc/chassis.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/app/Snc/chassis.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/app/Snc/pid.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/app/Snc/pid.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/app/Snc/remote.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/app/Snc/remote.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/bsp/Snc/bsp_can.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/bsp/Snc/bsp_can.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sentry_chassis.elf.dir/bsp/Snc/uart.c.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sentry_chassis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sentry_chassis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sentry_chassis.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sentry_chassis.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sentry_chassis.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sentry_chassis.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/sentry_chassis.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sentry_chassis.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentry_chassis.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/sentry_chassis.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +94,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
@@ -105,6 +120,11 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sentry_chassis.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sentry_chassis" TARGET_NAME="sentry_chassis.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sentry_chassis" RUN_TARGET_NAME="sentry_chassis.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -122,6 +142,14 @@
       <workItem from="1734007126839" duration="727000" />
       <workItem from="1734008163699" duration="286000" />
       <workItem from="1734088440745" duration="7603000" />
+      <workItem from="1734104214734" duration="296000" />
+      <workItem from="1734141285547" duration="3307000" />
+      <workItem from="1734437083333" duration="1189000" />
+      <workItem from="1734446707128" duration="846000" />
+      <workItem from="1734447625209" duration="1135000" />
+      <workItem from="1734504296622" duration="2119000" />
+      <workItem from="1734536915130" duration="14000" />
+      <workItem from="1734615711185" duration="4215000" />
     </task>
     <task id="LOCAL-00001" summary="origin">
       <option name="closed" value="true" />
@@ -131,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734102948059</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="origin">
+      <option name="closed" value="true" />
+      <created>1734104394408</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734104394408</updated>
+    </task>
+    <task id="LOCAL-00003" summary="origin">
+      <option name="closed" value="true" />
+      <created>1734104419168</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734104419168</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +188,7 @@
     <isAutomaticFoundErrors value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="origin" />
     <option name="LAST_COMMIT_MESSAGE" value="origin" />
